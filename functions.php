@@ -87,6 +87,22 @@ function rw_setup(  )
 endif;
 add_action( 'after_setup_theme', 'rw_setup' );
 
+function base_scripts() {
+        wp_enqueue_script(
+                'retina',
+                get_bloginfo('template_url') . '/js/retina-1.1.0.min.js',
+                array('jquery')
+        );
+        wp_enqueue_script(
+                'bootstrap',
+                get_bloginfo('template_url') . '/js/bootstrap.min.js',
+                array('jquery')
+        );
+}
+add_action('wp_enqueue_scripts', 'base_scripts');
+
+
+
 /* In an attempt to make this code easier to read, the major chunks have been broken into
  * smaller files with code pertaining only that functionality
  */

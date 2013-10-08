@@ -44,7 +44,7 @@
             $defaults = array(
                 'theme_location'  => 'primary',
                 'container'       => 'nav',
-                'menu_class'      => 'nav nav-pills', // http://twitter.github.io/bootstrap/components.html#navbar
+                'menu_class'      => 'nav navbar-nav'
             );
             wp_nav_menu( $defaults );
         ?>
@@ -52,5 +52,6 @@
 
     </header>
 
-    <section id="rw-content-wrapper" class="container">
+    <section id="rw-content-wrapper">
+        <div class="container">
 
