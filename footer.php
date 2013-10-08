@@ -20,6 +20,9 @@
     <footer id="site-credits">
         <div class="container">
             <div class="col-sm-12">
+
+                <? get_sidebar( 'footer' ); ?>
+
                 All content copyright &copy; 
                 <a href="<?php echo home_url( '/' ) ?>" 
                    title="<?php echo esc_attr(get_bloginfo('name', 'display')), ' &mdash; ', esc_attr(get_bloginfo( 'description' )); ?>" 

@@ -9,6 +9,8 @@
 
 get_header(); ?>
 
+<div id="content" class="col-sm-9">
+
         <article class="post">
             <h2><?php _e( 'That Page Doesn\'t Exist! (404)', 'rotorwash' ); ?></h2>
             <p><?php _e( 'Bummer. Looks like the URL you requested doesn\'t exist. Maybe try a search?', 'rotorwash' ); ?></p>
@@ -22,4 +24,8 @@ get_header(); ?>
             </script>
         </article>
 
-<?php get_footer();
+</div>
+
+<?php 
+get_sidebar();
+get_footer();

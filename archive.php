@@ -12,8 +12,11 @@
  * @since RotorWash 1.0
  */
 
-get_header();
+get_header(); ?>
 
+<div id="content" class="col-sm-9">
+
+<?php 
 /* Grab the first post to determine what type of 
  * post is being displayed.
  */
@@ -58,6 +61,10 @@ rewind_posts();
 /* Overwrite this in a child theme using a file called 
  * loop-archives.php to add your own styles to the posts.
  */
-get_template_part( 'loop', 'archive' );
+get_template_part( 'loop', 'archive' ); ?>
+
+</div>
+
+<?php
 get_sidebar();
 get_footer();

@@ -7,7 +7,10 @@
  * @since RotorWash 1.0
  */
 
-get_header();
+get_header(); ?>
+
+<div id="content" class="col-sm-9">
+<?php 
 
 if( have_posts() ):
     while( have_posts() ):
@@ -58,7 +61,10 @@ wp_link_pages(array('before' => '<p class="post-pagination">' . __('Pages:', 'ro
 <?php 
 
     endwhile;
-endif;
+endif; ?>
 
+</div>
+
+<?php
 get_sidebar();
 get_footer();

@@ -13,10 +13,12 @@
  * @since RotorWash 1.0
  */
 
-get_header();
+get_header(); ?>
 
-get_template_part( 'loop', 'index' );
+<div id="content" class="col-sm-9">
+	<? get_template_part( 'loop', 'index' ); ?>
+</div>
 
+<?php
 get_sidebar();
-get_sidebar( 'footer' );
 get_footer();
