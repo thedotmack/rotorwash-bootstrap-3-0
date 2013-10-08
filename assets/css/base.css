@@ -1,0 +1,40 @@
+/* 
+Add base styles for WP alignment classes. 
+More info: http://codex.wordpress.org/CSS 
+*/
+.aligncenter { display:block; margin: 0 auto 20px auto; }
+.alignleft 	 { float:left;    margin: 0 20px 20px 0;	}
+.alignright  { float:right;   margin: 0 20px 20px 0;	}
+.wp-caption  {
+    border:1px solid #666; 
+    text-align:center; 
+    background:#ccc; 
+    padding:10px; 
+    margin:10px; 
+}
+
+/*
+Base Image alignment - like the above but ya know more specific in case ;) 
+*/
+img.alignleft {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+img.alignright {
+    float: right;
+    margin: 0 0 20px 20px;
+}
+
+img.aligncenter {
+    float: none;
+    margin: 0 auto 20px;
+}
+
+
+/* Pagination */
+/* ----------------------------------------- */
+
+.pagination { padding: 20px 50px 0 50px; overflow: hidden; }
+.pagination .next { float: right; }
+.pagination .prev { float: left; }
