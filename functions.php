@@ -90,12 +90,12 @@ add_action( 'after_setup_theme', 'rw_setup' );
 function base_scripts() {
         wp_enqueue_script(
                 'retina',
-                get_bloginfo('template_url') . '/js/retina-1.1.0.min.js',
+                get_bloginfo('template_url') . '/assets/js/retina-1.1.0.min.js',
                 array('jquery')
         );
         wp_enqueue_script(
                 'bootstrap',
-                get_bloginfo('template_url') . '/js/bootstrap.min.js',
+                get_bloginfo('template_url') . '/assets/js/bootstrap.min.js',
                 array('jquery')
         );
 }
